@@ -1,80 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Bootstrap demo</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-			crossorigin="anonymous" />
-		<link rel="stylesheet" href="css/style.css" />
-	</head>
-	<body>
-		<header>
-			<nav class="navbar navbar-expand-lg bg-secondary">
-				<div class="container-fluid">
-					<a class="navbar-brand text-white" href="#">Lorem Ipsum</a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link link-light active" aria-current="page" href="#">Dolor</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link link-light disabled" href="#">Sit</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link link-light">Amet</a>
-							</li>
-							<li class="nav-item dropdown d-xl-none">
-								<a
-									class="nav-link link-light dropdown-toggle"
-									href="#"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false">
-									Opciones
-								</a>
-				
-								<ul class="dropdown-menu list-group">
-									<li>
-										<a href="#" class="dropdown-item list-group-item list-group-item-action">Opción 1</a>
-									</li>
-									<li>
-										<a href="#" class="dropdown-item list-group-item list-group-item-action">Opción 2</a>
-									</li>
-									<li>
-										<a href="#" class="dropdown-item list-group-item list-group-item-action">Opción 3</a>
-									</li>
-									<li>
-										<a href="#" class="dropdown-item list-group-item list-group-item-action">Opción 4</a>
-									</li>
 
-								</ul>
-							</li>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Bootstrap demo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
 
-						</ul>
-						<form class="d-flex" role="search">
-							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-						</form>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-secondary">
+			<div class="container-fluid">
+				<a class="navbar-brand text-white" href="#">Lorem Ipsum</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<form class="d-flex order-lg-last mt-3" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+					</form>
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link link-light active" aria-current="page" href="#">Dolor</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link link-light disabled" href="#">Sit</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link link-light">Amet</a>
+						</li>
+						<li class="nav-item d-lg-none">
+							<a class="nav-link link-light" data-bs-toggle="collapse" href="#collapseExample"
+								role="button" aria-expanded="false" aria-controls="collapseExample">
+								Opciones
+							</a>
+						</li>
+
+					</ul>
 
 
-					</div>
+
 				</div>
-			</nav>
-		</header>
-		<main>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="collapse" id="collapseExample">
+
+			<div class="container p-0">
+				<ul class="list-group">
+					<li>
+						<a href="#" class="list-group-item list-group-item-action py-3">Opción
+							1</a>
+					</li>
+					<li>
+						<a href="#" class="list-group-item list-group-item-action py-3">Opción
+							2</a>
+					</li>
+					<li>
+						<a href="#" class="list-group-item list-group-item-action py-3">Opción
+							3</a>
+					</li>
+					<li>
+						<a href="#" class="list-group-item list-group-item-action py-3">Opción
+							4</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<div class="d-none d-lg-block">
 			<div id="titulo">
 				<h1 class="text-center">Lorem ipsum.</h1>
 			</div>
@@ -91,95 +91,111 @@
 					</div>
 				</div>
 			</div>
-			<div class="d-flex container">
-				<div id="opciones" class="col-3 d-none d-xl-block">
-					<ul class="list-group">
-						<li>
-							<a href="#" class="list-group-item list-group-item-action">Opción 1</a>
-						</li>
-						<li>
-							<a href="#" class="list-group-item list-group-item-action">Opción 2</a>
-						</li>
-						<li>
-							<a href="#" class="list-group-item list-group-item-action">Opción 3</a>
-						</li>
-						<li>
-							<a href="#" class="list-group-item list-group-item-action">Opción 4</a>
-						</li>
-					</ul>
-				</div>
-				<div id="lorem" class="container col-9 text-justify ms-2">
-					<div class="row row-cols-3 text-bg-light">
-						
-						<div class="col">
-							<p>
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus molestias obcaecati nam quod atque,
-								quis dolorem asperiores? Magni pariatur aspernatur sit, nam aliquid amet voluptates,
-							</p>
-						</div>
+		</div>
+		<div class="d-flex container">
+			<div id="opciones" class="col-3 d-none d-lg-block">
+				<ul class="list-group">
+					<li>
+						<a href="#" class="list-group-item list-group-item-action">Opción 1</a>
+					</li>
+					<li>
+						<a href="#" class="list-group-item list-group-item-action">Opción 2</a>
+					</li>
+					<li>
+						<a href="#" class="list-group-item list-group-item-action">Opción 3</a>
+					</li>
+					<li>
+						<a href="#" class="list-group-item list-group-item-action">Opción 4</a>
+					</li>
+				</ul>
+			</div>
+			<div id="lorem" class="col text-justify ms-lg-4">
+				<div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
 
-						<div class="col">
-							<p>
-								iusto nostrum, enim mollitia provident. Provident qui voluptatem accusantium? Rerum delectus odio
-								accusantium vel aut alias velit temporibus facilis autem laborum blanditiis, dignissimos consectetur
-								dolores
-							</p>
-						</div>
+					<div class="col text-bg-light mb-3">
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus molestias obcaecati nam
+							quod atque,
+							quis dolorem asperiores? Magni pariatur aspernatur sit, nam aliquid amet voluptates,
+						</p>
+					</div>
 
-						<div class="col">
-							<p>
-								Explicabo, facilis dolorum? Nihil pariatur in quisquam dolorum iure rem eum? Fugit cumque molestiae
-								atque, quia voluptas quidem tempora soluta. Aut aspernatur aperiam explicabo beatae iure eum voluptate
-								minus enim.
-							</p>
-						</div>
+					<div class="col text-bg-light mb-3">
+						<p>
+							iusto nostrum, enim mollitia provident. Provident qui voluptatem accusantium? Rerum delectus
+							odio
+							accusantium vel aut alias velit temporibus facilis autem laborum blanditiis, dignissimos
+							consectetur
+							dolores
+						</p>
+					</div>
 
-						<div class="col">
-							<p>
-								Quisquam iste repudiandae itaque quis nemo expedita necessitatibus minus, autem deserunt aliquam
-								consectetur quasi harum corrupti officiis commodi sunt similique in, aut recusandae aperiam beatae
-								dolorem. Placeat modi incidunt laudantium!
-							</p>
-						</div>
+					<div class="col text-bg-light mb-3">
+						<p>
+							Explicabo, facilis dolorum? Nihil pariatur in quisquam dolorum iure rem eum? Fugit cumque
+							molestiae
+							atque, quia voluptas quidem tempora soluta. Aut aspernatur aperiam explicabo beatae iure eum
+							voluptate
+							minus enim.
+						</p>
+					</div>
 
-						<div class="col">
-							<p>
-								Corrupti fuga velit culpa minus ipsa esse officiis adipisci repudiandae dignissimos, autem magnam omnis
-								sit quia cumque a. Eaque quisquam dicta facere tempore iusto voluptate, beatae unde amet aut?
-								Laudantium!
-							</p>
-						</div>
+					<div class="col text-bg-light mb-3">
+						<p>
+							Quisquam iste repudiandae itaque quis nemo expedita necessitatibus minus, autem deserunt
+							aliquam
+							consectetur quasi harum corrupti officiis commodi sunt similique in, aut recusandae aperiam
+							beatae
+							dolorem. Placeat modi incidunt laudantium!
+						</p>
+					</div>
 
-						<div class="col">
-							<p>
-								Voluptatem suscipit, eaque culpa blanditiis cum minima deleniti iure ea accusamus quae repellat quasi
-								harum ad facere vel? Repellendus eos sunt illum deleniti! Quos voluptatum dignissimos itaque ea vitae
-								corrupti?
-							</p>
-						</div>
+					<div class="col text-bg-light mb-3">
+						<p>
+							Corrupti fuga velit culpa minus ipsa esse officiis adipisci repudiandae dignissimos, autem
+							magnam omnis
+							sit quia cumque a. Eaque quisquam dicta facere tempore iusto voluptate, beatae unde amet
+							aut?
+							Laudantium!
+						</p>
+					</div>
 
-						<div class="col">
-							<p>
-								Esse ea ex obcaecati rerum enim laborum omnis a quae nam, voluptatem, iusto exercitationem nulla
-								doloribus, dolores ad aliquam? Omnis iusto quae, deserunt incidunt est soluta corporis. Quidem, officia
-								debitis?
-							</p>
-						</div>
+					<div class="col text-bg-light mb-3">
+						<p>
+							Voluptatem suscipit, eaque culpa blanditiis cum minima deleniti iure ea accusamus quae
+							repellat quasi
+							harum ad facere vel? Repellendus eos sunt illum deleniti! Quos voluptatum dignissimos itaque
+							ea vitae
+							corrupti?
+						</p>
+					</div>
 
-						<div class="col">
-							<p>
-								Nisi, repellat, rem placeat fugit animi inventore necessitatibus, praesentium sunt architecto explicabo
-								quasi ducimus. Repudiandae, inventore amet! Nemo sed labore cum, velit incidunt fugiat obcaecati eius
-								dolores a maiores illo.
-							</p>
-						</div>
+					<div class="col text-bg-light mb-3">
+						<p>
+							Esse ea ex obcaecati rerum enim laborum omnis a quae nam, voluptatem, iusto exercitationem
+							nulla
+							doloribus, dolores ad aliquam? Omnis iusto quae, deserunt incidunt est soluta corporis.
+							Quidem, officia
+							debitis?
+						</p>
+					</div>
+
+					<div class="col text-bg-light mb-3">
+						<p>
+							Nisi, repellat, rem placeat fugit animi inventore necessitatibus, praesentium sunt
+							architecto explicabo
+							quasi ducimus. Repudiandae, inventore amet! Nemo sed labore cum, velit incidunt fugiat
+							obcaecati eius
+							dolores a maiores illo.
+						</p>
 					</div>
 				</div>
 			</div>
-		</main>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-			crossorigin="anonymous"></script>
-	</body>
+		</div>
+	</main>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+		crossorigin="anonymous"></script>
+</body>
+
 </html>
