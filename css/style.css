@@ -1,0 +1,11 @@
+header a {
+    color: #fff;
+}
+
+main li {
+    list-style: none;
+}
+
+.col p {
+    text-align: justify;
+}
